@@ -11,10 +11,7 @@ let userSchema = require('../Schema/schema')
 router.get('/display',async function (req, res) {
   try {
     const result = await userSchema.find()
-    res.json({
-      message : 'displaying all record',
-      result
-    })
+    res.json(result)
   }
   catch (error){
     console.log(error)
