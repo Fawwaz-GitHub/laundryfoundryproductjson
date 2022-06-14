@@ -15,7 +15,7 @@ const mongoose = require('mongoose');
 
 let dburl = 'mongodb+srv://FawwazMB:Alchemy2020@cluster0.kr2vu.mongodb.net/LaundryFoundry?retryWrites=true&w=majority'
 
-var port = normalizePort(process.env.PORT || '5000');
+var port = normalizePort(process.env.PORT || 5000);
 app.set('port', port);
 
 /**
